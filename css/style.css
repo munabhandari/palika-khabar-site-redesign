@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@200;300;400;500;600;700;800&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --var brand: #fb3;
+    --var dark-grey: #4c4c4e;
+}
+
+body {
+    font-family: 'Mukta', sans-serif;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+}
+
+.videosection {
+    height: 550px;
+    width: 100%;
+    position: relative;
+}
+
+.myvideo {
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    object-fit: fill;
+}
+
+.logo {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+.logo img {
+    max-width: 550px;
+    height: auto;
+}
+
+.d-grid {
+    display: grid;
+    grid-template-columns: 900px 200px;
+    justify-content: space-between;
+}
+
+.main-nav .nav-yellow {
+    background-color: #fb3;
+}
+
+.main-nav .nav-top {
+    height: 65px;
+}
+
+.submenu {
+    /* display: none; */
+    width: 150px;
+    background-color: #fb3;
+    color: black;
+    position: absolute;
+}
+
+.submenu li:hover a {
+    color: white !important;
+}
+
+.submenu li {
+    list-style: none;
+}
+
+.main-nav .nav-top .nav-left ul {}
+
+.main-nav .nav-top .nav-left>ul>li {
+    display: table-cell;
+    padding: 16px 7px;
+    position: relative;
+}
+
+.main-nav .nav-top .nav-left ul a {
+    text-decoration: none;
+    color: black;
+}
+
+.main-nav .nav-top .nav-left li img {
+    width: 40px;
+    vertical-align: middle;
+}
+
+.main-nav .nav-top .nav-left li span {
+    color: red;
+    font-size: 10px;
+    padding-left: 8px;
+}
+
+.main-nav .nav-top .nav-left ul li:hover {
+    background-color: black;
+}
+
+.main-nav .nav-top .nav-left>ul>li:hover>a {
+    color: #fff;
+    /* padding: 22px 10px 18px 10px; */
+}
+
+.main-nav .nav-top .nav-left li.active a {
+    color: #fff;
+}
+
+.main-nav .nav-top .nav-left li.active {
+    background-color: black;
+}
+
+.main-nav .nav-top .nav-right a {
+    color: black;
+    text-decoration: none;
+}
+
+.main-nav .nav-top .nav-right a:hover {
+    color: #007bff;
+}
+
+.nav-top .nav-right {
+    padding: 19px;
+}
+
+.nav-top .nav-right span {
+    margin-right: 15px;
+}
+
+.main-nav .nav-bottom {
+    background-color: #e2e4e2;
+    padding: 15px;
+}
+
+.main-nav .nav-bottom ul li {
+    display: inline;
+    padding-right: 20px;
+}
+
+.main-nav .nav-bottom ul a {
+    text-decoration: none;
+    color: black;
+}
+
+.main-nav .nav-bottom li.active {
+    background-color: #f2f2f2;
+    padding: 13px;
+}
+
+.main-nav .nav-bottom a:hover li.active {
+    background-color: #f2f2f2;
+    color: black;
+}
+
+.main-nav .nav-bottom ul a:hover {
+    color: #007bff;
+    text-decoration-line: #007bff;
+}
+
+.d-rowgrid {
+    display: grid;
+    grid-template-rows: auto auto auto;
+    justify-content: space-between;
+}
+
+.grid-rowbox .row-box1, .grid-rowbox .row-box2, .grid-rowbox .row-box3 {
+    background-color: #fff;
+    box-shadow: 0px 0px 6px black;
+    margin-top: 20px;
+    text-align: center;
+    color: #4c4c4e;
+}
+
+.grid-rowbox h1 {
+    font-size: 50px;
+    padding: 20px 40px 0px 40px;
+}
+
+.grid-rowbox h5 {
+    font-size: 20px;
+    padding: 0px 0px 20px 0px;
+}
