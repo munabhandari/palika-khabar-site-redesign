@@ -5,11 +5,6 @@
     box-sizing: border-box;
 }
 
-:root {
-    --var brand: #fb3;
-    --var dark-grey: #4c4c4e;
-}
-
 body {
     font-family: 'Mukta', sans-serif;
 }
@@ -57,6 +52,10 @@ body {
     height: 65px;
 }
 
+.min-content {
+    height: min-content;
+}
+
 .submenu {
     visibility: hidden;
     opacity: 0;
@@ -66,14 +65,16 @@ body {
     color: black;
     padding: 10px;
     top: 68px;
-    left:0;
+    left: 0;
     position: absolute;
 }
+
 .submenu li a {
     width: 100%;
     display: inline-block;
     padding: 5px 10px;
 }
+
 .submenu li:hover a {
     color: white !important;
 }
@@ -83,10 +84,9 @@ body {
 }
 
 .main-nav .nav-top .nav-left ul li:hover .submenu {
-   
     visibility: visible;
-  opacity: 1;
-  transition: visibility 0s linear 0s, opacity 500ms;
+    opacity: 1;
+    transition: visibility 0s linear 0s, opacity 500ms;
 }
 
 .main-nav .nav-top .nav-left>ul>li {
@@ -117,7 +117,6 @@ body {
 
 .main-nav .nav-top .nav-left>ul>li:hover>a {
     color: #fff;
-   
 }
 
 .main-nav .nav-top .nav-left li.active a {
@@ -174,25 +173,50 @@ body {
     color: #007bff;
     text-decoration-line: #007bff;
 }
-.txt-center{text-align:center;}
-.m-15{margin: 15px;}
-.mt-5{ margin-top: 5px;}
-.pb-5{ padding-bottom: 5px;}
-.mt-20{
+
+.txt-center {
+    text-align: center;
+}
+
+.m-15 {
+    margin: 15px;
+}
+
+.p-15 {
+    padding: 15px;
+}
+
+.mt-5 {
+    margin-top: 5px;
+}
+
+.pb-5 {
+    padding-bottom: 5px;
+}
+
+.mt-20 {
     margin-top: 20px;
 }
-.mb-20{
+
+.mb-20 {
     margin-bottom: 20px;
 }
-.pt-20{padding-top: 20px;}
-.pb-20{padding-bottom: 20px;}
-.box-sh{
+
+.pt-20 {
+    padding-top: 20px;
+}
+
+.pb-20 {
+    padding-bottom: 20px;
+}
+
+.box-sh {
     box-shadow: 2px 2px 7px rgb(68, 66, 66);
- }
+}
+
 .d-rowgrid {
     display: grid;
     grid-template-rows: auto auto auto;
-    
 }
 
 .grid-rowbox .row-box1, .grid-rowbox .row-box2, .grid-rowbox .row-box3 {
@@ -212,80 +236,118 @@ body {
     font-size: 20px;
     padding: 0px 0px 20px 0px;
 }
-.sec-76 h3{
+
+.sec-76 h3 {
     padding-top: 30px;
     font-size: 50px;
     text-align: center;
 }
-.sec-76 h5{
+
+.sec-76 h5 {
     font-size: 25px;
     text-align: center;
 }
-.sec-76 p{
+
+.sec-76 p {
     font-size: 23px;
     text-align: center;
-   }
-   .d-colgrid1 {
-    display: grid;
-    grid-template-columns: 200px 900px 300px;
-    justify-content: space-between;
-    background-color: aqua;
 }
-.dg-row9{
+
+.d-colgrid1 {
+    display: grid;
+    grid-template-columns: 230px 1180px;
+    justify-content: space-between;
+}
+.d-colgrid2 {
+    display: grid;
+    grid-template-columns: 880px 300px;
+    justify-content: space-between;
+}
+
+.dg-row9 {
     display: grid;
     grid-template-rows: auto auto auto auto auto auto auto auto auto;
-    background-color: pink;
 }
-.left-grid-box h4{font-size: 20px;}
-.left-grid-box p{
+
+.left-grid-box h4 {
     font-size: 20px;
 }
-.left-grid-box hr{
+.p-0{
+    padding: 0 !important;
+}
+.left-grid-box p {
+    font-size: 20px;
+}
+
+.left-grid-box hr {
     margin-bottom: 10px;
 }
+
 button {
     background-color: #fb3;
     color: #fff;
     padding: 3px 10px;
     border-radius: 50px;
     font-weight: bold;
-    border: 3px  solid #fb3;
+    border: 3px solid #fb3;
     margin-bottom: 10px;
 }
-.dg-col3{
+
+.dg-col3 {
     display: grid;
     grid-template-columns: auto auto auto;
     column-gap: 10px;
-    
-    background-color: pink;
 }
-.middle-grid-box p{
+
+.middle-grid-box p {
     font-size: 20px;
 }
-.middle-grid-box .container-wrapper{
+
+.middle-grid-box .container-wrapper {
     padding: 20px;
     justify-content: space-between;
     grid-column-gap: 50px;
 }
-.middle-grid-box .common-title{
-  font-size: 20px;
-  text-align: center;
-  padding: 15px 0px;
-} 
-.middle-grid-box .container-wrapper .p-colour{
+
+.middle-grid-box .common-title {
+    font-size: 20px;
+    text-align: center;
+    padding: 15px 0px;
+}
+
+.middle-grid-box .container-wrapper .p-colour {
     color: #4c4c4e;
     font-size: 17px;
     padding: 5px 0px;
 }
-.middle-grid-box .btn{text-align: center;}
 
-.right-grid-box p{ font-size: 20px;} 
-.right-grid-box .common-phrase{
-    font-size: 20px;
-  text-align: left;
-  padding: 15px 30px;
+.middle-grid-box .btn {
+    text-align: center;
 }
-.right-grid-box hr{
+
+.right-grid-box p {
+    font-size: 20px;
+}
+
+.right-grid-box .common-phrase {
+    font-size: 20px;
+    text-align: left;
+    padding: 15px 30px;
+}
+
+.right-grid-box hr {
     width: 90%;
     margin: 10px;
+}
+
+.zoom-on-hover{
+    object-fit: cover;
+    overflow: hidden;
+    max-width: 100%;
+}
+
+.zoom-on-hover:hover img{
+    transform: scale(1.5);
+    transition: 1s;
+
 }
