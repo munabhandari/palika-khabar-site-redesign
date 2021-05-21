@@ -256,10 +256,36 @@ button {
     display: grid;
     grid-template-columns: auto auto auto;
     column-gap: 10px;
+    
     background-color: pink;
 }
-.dg-row2{
-    display: grid;
-    grid-template-rows: auto auto;
-    background-color: rgb(218, 129, 78);
+.middle-grid-box p{
+    font-size: 20px;
+}
+.middle-grid-box .container-wrapper{
+    padding: 20px;
+    justify-content: space-between;
+    grid-column-gap: 50px;
+}
+.middle-grid-box .common-title{
+  font-size: 20px;
+  text-align: center;
+  padding: 15px 0px;
+} 
+.middle-grid-box .container-wrapper .p-colour{
+    color: #4c4c4e;
+    font-size: 17px;
+    padding: 5px 0px;
+}
+.middle-grid-box .btn{text-align: center;}
+
+.right-grid-box p{ font-size: 20px;} 
+.right-grid-box .common-phrase{
+    font-size: 20px;
+  text-align: left;
+  padding: 15px 30px;
+}
+.right-grid-box hr{
+    width: 90%;
+    margin: 10px;
 }
