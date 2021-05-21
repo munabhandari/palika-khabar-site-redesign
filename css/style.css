@@ -58,13 +58,23 @@ body {
 }
 
 .submenu {
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s linear 500ms, opacity 500ms;
     /* display: none; */
     width: 150px;
     background-color: #fb3;
     color: black;
+    padding: 10px;
+    top: 68px;
+    left:0;
     position: absolute;
 }
-
+.submenu li a {
+    width: 100%;
+    display: inline-block;
+    padding: 5px 10px;
+}
 .submenu li:hover a {
     color: white !important;
 }
@@ -73,7 +83,12 @@ body {
     list-style: none;
 }
 
-.main-nav .nav-top .nav-left ul {}
+.main-nav .nav-top .nav-left ul li:hover .submenu {
+    /* display: block; */
+    visibility: visible;
+  opacity: 1;
+  transition: visibility 0s linear 0s, opacity 500ms;
+}
 
 .main-nav .nav-top .nav-left>ul>li {
     display: table-cell;
